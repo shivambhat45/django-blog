@@ -80,7 +80,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog_project.wsgi.application'
 
-
+SECRET_KEY='hl-0--8k)h+ycyd4mlz5*db5wd%s2m*-m^4d622=_**kvv0sqd'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
