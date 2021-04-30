@@ -80,7 +80,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog_project.wsgi.application'
 
-SECRET_KEY='hl-0--8k)h+ycyd4mlz5*db5wd%s2m*-m^4d622=_**kvv0sqd'
+SECRET_KEY=os.environ.get('SECRET_KEY')
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -148,9 +148,9 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dfcdzpmcq',
-    'API_KEY': '859188753697831',
-    'API_SECRET': 'DgQMQW1DIZI4rN45jm0VgEt-arI'
+    'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
+    'API_KEY': os.environ.get('API_KEY'),
+    'API_SECRET': os.environ.get('API_SECRET')
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
